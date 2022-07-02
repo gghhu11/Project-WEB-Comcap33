@@ -1,0 +1,308 @@
+@font-face {
+    font-family: Valorant Font;
+    src: url(/font/ValorantFont.ttf);
+}
+
+body {
+    background-color: #ECE8E1;
+}
+
+* {
+    font-family: "Valorant Font";
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header {
+    width: 100%;
+    height: 540px;
+    position: relative;
+}
+.header .topic {
+    position: absolute;
+    color: #fff;
+    margin-top: 35px;
+    left: 150px;
+    top : 115px;
+}
+
+.topic h3{
+    position: absolute;
+    font-size: 150px;
+    z-index: 2
+    
+}
+
+.header .img {
+    position: absolute;
+    top: 135px;
+    left: 90px;
+    z-index: 1;
+}
+
+
+.header .dropdown {
+    display: inline-block;
+    position: relative;
+    background-color: #FF4B50;
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    text-align: center;
+    top: 50px;
+    left: 1700px;
+    /* float: right; */
+
+} 
+
+.header .dropdown .All-Agent-hidden {
+    display: none;
+}
+
+.header .dropdown .All-Agent-show {
+    display: inline;
+}
+
+
+
+.header .dropdown:hover{
+    cursor: pointer;
+}
+
+
+.header .background {
+    position: absolute;
+    width: 100%;
+}
+/* --------------------End Header-------------------- */
+
+.content {
+    
+    margin-top: 300px;
+    width: 100%;
+}
+
+/* .content .img-background {
+    position: absolute;
+    z-index: 1;
+} */
+
+.content .img-Agent {
+    position: absolute;
+    top: 60px;
+    margin-left : 1100px;
+
+}
+
+.content .descipt-Agent {
+    position: absolute;
+    color: #292929;
+    bottom: 200px;
+    left: 450px;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.content .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.content video {
+    /* position: absolute; */
+    margin-left: 150px;
+    width: 800px;
+    height: 650px;
+
+}
+
+.content .grid-collum1 {
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.content .grid .grid-collum1 .third  {
+    width: 100%;
+    justify-items: center;
+    font-size: 20px;
+}
+
+
+.content .grid-collum1 .skill ul {
+    list-style: none;
+    color: #bdbcb7;
+}
+
+.content .grid-collum1 .skill {
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    justify-content: center;
+
+}
+
+.content .grid-collum1 .skill1 img{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: #ece8e1;
+    border: 1px solid #bdbcb7;
+}
+
+.content .grid-collum1 .skill2 img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: #ece8e1;
+    border: 1px solid #bdbcb7;
+}
+
+.content .grid-collum1 .skill3 img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: #ece8e1;
+    border: 1px solid #bdbcb7;
+}
+
+.content .grid-collum1 .skill4 img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: #ece8e1;
+    border: 1px solid #bdbcb7;
+}
+
+/* --------------------End Content-------------------- */
+
+footer {
+    margin: 200px 0 0 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .download {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    background-color: #292929;
+    color: #fff;
+    padding: 20px 0 ;
+}
+
+footer .download  h4{
+    margin: auto;
+    padding: 1px 0;
+    
+}
+footer .download h4:hover {
+    background-color: rgb(151, 151, 151);
+    width: 100px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;;
+}
+
+footer .contact {
+    height: 150px;
+    background-color: #111;
+}
+
+/* --------------------End Footer-------------------- */
+
+:root {
+    --home-bg-color: #FF4B50;
+    --menu-bg-color: #FF4B50;
+    --silde-btn-border: #808080;
+    --slide-btn-bg: #ddf2db;
+    --slide-btn-hoverbg: #f1fff1;
+    --icon-hover-color: #FF4B50;
+    --icon-hover-bg: #709680;
+    --border-color: #ffffff;
+    --heading-color: #344a39;
+    --border-radius: 60px 5px;
+  }
+  
+  #ham-menu {
+    display: none;
+  }
+  label[for="ham-menu"] {
+    display: block;
+    position: fixed;
+    top: 24px;
+    left: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #FF4B50;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+  }
+  .ham-menu {
+    width: 25vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    transform: translate(-110%);
+    z-index: 998;
+    background-color: #0E1923;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ham-menu > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    height: 50%;
+  }
+  .ham-menu > ul > li {
+    font-size: 3rem;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    color: #FF4B50;
+  }
+  #ham-menu:checked ~ div.ham-menu {
+    transform: translate(0px);
+    visibility: visible;
+  }
+  
+  .centre-text {
+    text-align: center;
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+
+  .gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #FF4B50;
+    bottom: 16px;
+    right: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 32px;
+    transition: all .4s;
+  }
+  

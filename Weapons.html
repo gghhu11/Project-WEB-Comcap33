@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/884005395478245407/964561551069675570/honeycomb_icon_valorant_v3_by_mauriliosm_de9c55i.png">
+  <title>Weapons</title>
+  <style>
+      @font-face {
+  font-family: Valorant Font;
+  src: url(/font/ValorantFont.ttf);
+}
+  * {
+    font-family: "Valorant Font";
+  }
+  
+  * {
+      box-sizing: border-box;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+    }
+    .center {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      position : relative;
+      align-items: center;
+      justify-content: center;
+    }
+.absolute{
+  position : absolute;
+}
+    .img1 {
+      position: absolute;
+      background-size: contain;
+      border: s}
+
+      body {
+        position : relative;
+      }
+   .text{
+    font-size: 150px;
+      color: #FF4B50;
+      text-align: center;}
+    .text2{
+        font-size: 24px;
+          color: #FF4B50;
+          text-align: center;
+    }
+    .textp{
+      font-size: 20px;
+        color: hsl(0, 2%, 78%);
+        text-align: center;
+  }
+    .h2 {
+      text-align: center;
+    }
+
+    .adjust-line-height {
+      line-height: 0.2em;
+    }
+
+      .c1 {
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        justify-content: center; 
+        position : absolute
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+      }
+
+
+      .table {
+        border-collapse: separate;
+        border-spacing: 0 20px;
+        }
+
+        .table2 {
+          border-collapse: separate;
+          border-spacing: 0 20px;
+          text-align: left;
+        
+      }
+      td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+
+      /* animation scroll down */
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #FF4B50;
+  bottom: 16px;
+  right: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 32px;
+  transition: all .4s;
+}
+    h1{
+      color: aliceblue;
+      font-size: 90px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: rgb(255, 252, 252);
+      font-size: 20;
+      text-align: center;
+    }
+    
+    img {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+    }
+    body {
+      width: 95%;
+      background-image: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltbded518020183769/5eb26f5389bac8148a8006cc/agent-background-generic.JPG");
+    }
+
+    
+    .grid-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 50px;
+      margin-left: 2%;
+      align-content: end;
+    }
+    .grid-item {
+      background-color: rgba(231, 58, 58, 0.8);
+      border: 1px solid rgba(0,0,0,0.8);
+      font-size: 1px;
+      padding: 1px;
+      text-align: center;
+
+    }
+    .card {
+      max-width: 500px;
+      border-radius: 5px;
+      min-height: 500;
+      background: rgb(25, 25, 25);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: rgb(127, 127, 127);
+      position: static;
+      top:0;
+      transition: all .1s ease-in
+
+    }
+    :root {
+    --home-bg-color: #FF4B50;
+    --menu-bg-color: #FF4B50;
+    --silde-btn-border: #808080;
+    --slide-btn-bg: #ddf2db;
+    --slide-btn-hoverbg: #f1fff1;
+    --icon-hover-color: #FF4B50;
+    --icon-hover-bg: #709680;
+    --border-color: #ffffff;
+    --heading-color: #344a39;
+    --border-radius: 60px 5px;
+  }
+  
+  #ham-menu {
+    display: none;
+  }
+  label[for="ham-menu"] {
+    display: block;
+    position: fixed;
+    top: 24px;
+    left: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #FF4B50;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+  }
+  .ham-menu {
+    width: 25vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    transform: translate(-110%);
+    z-index: 998;
+    background-color: #0E1923;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ham-menu > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    height: 50%;
+  }
+  .ham-menu > ul > li {
+    font-size: 3rem;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    color: #FF4B50;
+  }
+  #ham-menu:checked ~ div.ham-menu {
+    transform: translate(0px);
+    visibility: visible;
+  }
+  
+  .centre-text {
+    text-align: center;
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+
+
+
+  </style>
+</head>
+<body>
+    <input type="checkbox" id="ham-menu">
+    <label for="ham-menu">
+      <div class="hide-des">
+        <img src="https://media.discordapp.net/attachments/884005395478245407/964514883171418182/valorant-logo-0_1.png?width=559&height=559" height="100%" width="100%">
+      </div>
+    </label>
+    <div class="ham-menu" >
+      <ul class="centre-text bold-text">
+        <li><a href ="index.html#"style="text-decoration: none; color:#FF4B50;">Home</a></li>
+        <li><a href ="All.html# "style="text-decoration: none; color:#FF4B50;">All</a></li>
+        <li><a href ="Agents.html# "style="text-decoration: none; color:#FF4B50;">Agents</a></li>
+        <li><a href ="Weapons.html#"style="text-decoration: none; color:#FF4B50;">Weapons</a></li>
+        <li><a href ="map.html#"style="text-decoration: none; color:#FF4B50;">Maps</a></li>
+      </ul>
+    </div>
+  <h1 style="text-align:center;"style="font-size:500%;">WEAPON</h1>
+  <div class="grid-container">
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\4 sherrif.png"  >
+        <h2>HERIFF..</h2>
+        <span>ประเภท // ปืนพก
+          บรรจุด้วยกระสุนหนักที่มีแรงถีบที่สูงมากและต้องมีจิตวิญญาณที่แท้จริงถึงจะชำนาญ
+          ใช้ Sheriff ให้คล่อง แล้วศัตรูของคุณจะรู้ว่าพวกเขาได้สูญสิ้นความหวังในการอยู่รอดไปแล้ว
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\2Shorty.png">
+        <h2>SHORTY.</h2>
+        <span>ประเภท // ปืนพก
+          ปืนลูกซองกระบอกสั้นและคล่องตัวที่เป็นอันตรายถึงชีวิตในระยะใกล้ แต่สามารถยิงได้แค่สองครั้งก่อนที่จะต้องรีโหลด เหมาะกับการใช้คู่กับอาวุธระยะไกล
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\3Ghost.png">
+        <h2>FRENZY.</h2>
+        <span>ประเภท // ปืนพก 
+          ปืนพกกลน้ำหนักเบาที่เด่นเรื่องการยิงระหว่างเคลื่อนไหว อัตราการยิงที่สูงของมันอาจจะควบคุมยาก ดังนั้นลองยิงเบิร์สสั้น ๆ ในระยะกลางดูก่อน
+        </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\1Classic.png">
+        <h2>CLASSIC.</h2>
+        <span>ประเภท // ปืนพก
+          การยิงปกติจะแม่นเมื่ออยู่นิ่ง และมาพร้อมกับโหมดเบิร์สสำหรับการเผชิญหน้าในระยะใกล้
+                  
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item" ></div>
+      <article>
+        <img src="images\5 frenzy.png">
+        <h2>FRENZY.</h2>
+        <span>ปืนพกกลน้ำหนักเบาที่เด่นเรื่องการยิงระหว่างเคลื่อนไหว อัตราการยิงที่สูงของมันอาจจะควบคุมยาก ดังนั้นลองยิงเบิร์สสั้น ๆ ในระยะกลางดูก่อน
+
+          </span>
+      </article>
+    </a>
+     
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\6golden gun.png" >
+        <h2>Golden Gun</h2>
+        <span>ประเภท //พิเศษ 
+          หนึ่งนัด หนึ่งคิลแม่นยำโดยสมบูรณ์แบบทุกครั้งเอเจนท์เคลื่อนที่ด้วยความเร็วสูงมีกระสุนในลำกล้องเพียงนัดเดียว และมีรอบสำรอง 2 รอบจะได้รับรอบเล่นเพิ่มเติมเมื่อทำการสังหารได้</span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\7stringer.png">
+        <h2>STINGER.</h2>
+        <span>ประเภท // ปืนกล
+          พวกเขาจะรู้ทันทีว่ามันจบแล้ว เมื่อโดน Stinger กราดใส่
+          SMG นี้มีศักยภาพในระยะกลางถึงไกลมากกว่าปืนอื่นที่คล้ายกัน แต่อัตราการยิงและความคล่องตัวก็น้อยลง
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\8spectre.png">
+        <h2>SPECTRE.</h2>
+        <span>ประเภท // ปืนกล
+          SMG นี้มีศักยภาพในระยะกลางถึงไกลมากกว่าปืนอื่นที่คล้ายกัน แต่อัตราการยิงและความคล่องตัวก็น้อยลง
+          อาวุธที่มีดีในทุกด้าน มีความสมดุลของความเสียหาย อัตราการยิง และความแม่นยำที่ดี ทั้งในระยะใกล้และกลาง
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\9bucky.png">
+        <h2>BUCKY.</h2>
+        <span>ประเภท // ปืนลูกซอง
+          หนักแต่เสถียร การยิงปกติของ Bucky เหมาะสำหรับเอาตัวรอดในมุมแคบหรือการบุกระยะประชิด โหมดการยิงเสริมจะจู่โจมศัตรูในระยะกลาง
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\10 judge.png">
+        <h2>JUDGE.</h2>
+        <span>ประเภท // ปืนลูกซอง
+          Judge นั้นจะเสถียรเมื่อยืนอยู่กับที่ แต่จะเล็งได้ยากเมื่อยิงรัวอย่างต่อเนื่อง
+          การยิงปกติจะบดขยี้เป้าหมายในระยะใกล้ และคุณต้องนิ่งเพื่อจะจัดการอะไรก็ตามที่อยู่ระยะห่างเกินแขน
+          
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\11 bullgdog.png">
+        <h2>BULLDOG.</h2>
+        <span>ประเภท // ปืนไรเฟิล
+          สัตว์ร้ายที่ยิงได้ผลแน่นอนหากคุณมีโอกาสได้เลือกการยิงเอง โหมดการยิงเสริมทำให้คุณได้ ADS และละทิ้งความแม่นยำ เบิร์ส ให้แก่ใครก็ตามที่จะลองดีกับคุณในระยะกลางไปจนถึงระยะไกล
+          
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\12 gaurdian.png">
+        <h2>GUARDIAN.</h2>
+        <span>ประเภท // ปืนไรเฟิล
+          ปืนไรเฟิลขึ้นชื่อสำหรับนักแม่นปืน หนักและมีความคล่องตัวน้อยเมื่อเทียบกับไรเฟิลอื่น ๆ แต่แม่นยำและทรงพลัง ไม่มีคนใดที่จะรอดจากการยิงในระยะกลางถึงไกล
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\13 phantom.png">
+        <h2>PHANTOM.</h2>
+        <span>ประเภท // ปืนไรเฟิล
+          ยิงแบบอัตโนมัติจัดเต็มเมื่อมีคนมาทดสอบคุณใกล้ ๆ หรือยิงเบิร์สแบบรัดกุมเพื่อทำให้ศัตรูทุกรายตะเกียกตะกาย ใช้งานได้ดีที่สุดเมื่อยืนอยู่กับที่
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\14Vandal.png">
+        <h2>VANDAL.</h2>
+        <span>ประเภท // ปืนไรเฟิล
+          การยิงต่อเนื่องเป็นเวลานานจะทำให้มีเสถียรภาพที่น้อยลง แต่ Vandal จะยังคงสร้างความเสียหายมากต่อให้ยิงไปในระยะไกลก็ตาม และให้รางวัลแก่คนที่เน้นการยิงทีละนัดไปที่หัวของเป้าหมาย
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\15 marshall.png">
+        <h2>MARSHAL.</h2>
+        <span>ประเภท // ปืนสไนเปอร์
+          เป็นไรเฟิลคันโยก-แอ็คชั่นว่องไวและซูมได้ครั้งเดียวซึ่งสามารถจัดการศัตรูดื้อรั้นให้อยู่ได้ อัตราการยิงที่ต่ำแปลว่าคุณต้องยิงเป้าหมายให้โดนหรือทิ้งให้ตัวเองถูกเปิดโปงต่อการโจมตี
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\16 op.png">
+        <h2>OPERATOR.</h2>
+        <span>ประเภท // ปืนสไนเปอร์
+          ปืนไรเฟิลกระบอกเกลียวที่ดุดันมีซูมคู่พลังงานสูง ลดความคล่องตัวอย่างมากแต่ก็ยิงได้ทรงพลังขนาดที่สามารถทำลายล้างทีมได้ด้วยการยิงนัดเดียว
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\17 areas.png">
+        <h2>ARES.</h2>
+        <span>ประเภท // อาวุธหนัก
+          แม็กกาซีนอันใหญ่ของ Ares แปลว่ามันเด่นในด้านการยิงกดดันหรือการสร้างความเสียหายอย่างมากแก่กลุ่มที่กระจุกกันอยู่
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\18 odin.png">
+        <h2>ODIN.</h2>
+        <span>ประเภท // อาวุธหนัก
+          เด่นในด้านการยิงกดดัน สร้างความเสียหายอย่างหนักและมาพร้อมกับเสถียรภาพที่น่าประหลาดใจ สาดใส่ศัตรูในระยะใกล้และใช้โหมดการยิงเสริมเพื่อทำให้ตัวเองกลายเป็นป้อมปืนที่มีชีวิต
+          </span>
+      </article>
+    </a>
+
+    <a href="#" class="card"><div class="grid-item"></div>
+      <article>
+        <img src="images\19 knife.png">
+        <h2>TACTICAL KNIFE.</h2>
+        <span>ประเภท // อาวุธระยะประชิด
+          เมื่ออยู่ในสถานการณ์คับขันหรือกระสุนหมด จงใช้สิ่งนี้จู่โจม ทำให้คุณวิ่งเร็ว ทำลายสิ่งของเร็วขึ้น หรือโจมตีศัตรูจากด้านหลังแบบทีเดียวตายด้วยโหมดการยิงเสริม
+          </span>
+      </article>
+    </a>
+  </div>
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+      function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 50;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+
+
+  const toTop = document.querySelector(".to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    } else {
+      toTop.classList.remove("active");
+    }
+  })
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+
+  </script>
+
+
+                
+</body>
+</html>

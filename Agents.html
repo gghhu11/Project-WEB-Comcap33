@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/884005395478245407/964561551069675570/honeycomb_icon_valorant_v3_by_mauriliosm_de9c55i.png">
+    <title>Agents</title>
+    
+    <link rel="stylesheet" href="Agents.css">
+</head>
+<body>
+    <input type="checkbox" id="ham-menu">
+    <label for="ham-menu">
+      <div class="hide-des">
+        <img src="https://media.discordapp.net/attachments/884005395478245407/964514883171418182/valorant-logo-0_1.png?width=559&height=559" height="100%" width="100%">
+      </div>
+    </label>
+    <div class="ham-menu" >
+        <ul class="centre-text bold-text">
+            <li><a href ="index.html#"style="text-decoration: none; color:#FF4B50;">Home</a></li>
+            <li><a href ="All.html# "style="text-decoration: none; color:#FF4B50;">All</a></li>
+            <li><a href ="Agents.html# "style="text-decoration: none; color:#FF4B50;">Agents</a></li>
+            <li><a href ="Weapons.html#"style="text-decoration: none; color:#FF4B50;">Weapons</a></li>
+            <li><a href ="map.html#"style="text-decoration: none; color:#FF4B50;">Maps</a></li>
+          </ul>
+    </div>
+
+    
+    
+    <div class="header">
+        
+        <video autoplay muted loop class="background" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29d7c4f6bc077e9e/5eb26f54402b8b4d13a56656/agent-background-generic.mp4" ></video>
+        <div class="topic">
+            <h3 >AGENTS</h3>
+        </div> 
+
+        <div class="img">
+            <img src="/img/topic.png" alt=""> 
+        </div> 
+
+        <div class="dropdown" onclick="slot()">Choose Agents
+
+            
+            <div class="hidden">
+
+            </div>
+            <div id="slot" class="All-Agent-hidden"  >
+                <div id="Jett" class="Jett" onclick="chooseJett()" style="padding: 10px;">
+                    <p>Jett</p>
+                </div>
+                <div id="Raze" class="Raze" onclick="chooseRaze()" style="padding: 10px;">
+                    <p>Raze</p>
+                </div>
+                <div id="Breach" class="Breach" onclick="chooseBreach()" style="padding: 10px;">
+                    <p>Breach</p>
+                </div>
+                <div id="Omen" class="Omen" onclick="chooseOmen()" style="padding: 10px;">
+                    <p>Omen</p>
+                </div>
+                <div id="Brimstone" class="Brimstone" onclick="chooseBrimstone()" style="padding: 10px;">
+                    <p>Brimstone</p>
+                </div>
+                <div id="Phoneix" class="Phoneix" onclick="choosePhoneix()" style="padding: 10px;">
+                    <p>Phoneix</p>
+                </div>
+                <div id="Sova" class="Sova" onclick="chooseSova()" style="padding: 10px;">
+                    <p>Sova</p>
+                </div>
+                <div id="Sage" class="Sage" onclick="chooseSage()" style="padding: 10px;">
+                    <p>Sage</p>
+                </div>
+                <div id="Viper" class="Viper" onclick="chooseViper()" style="padding: 10px;">
+                    <p>Viper</p>
+                </div>
+                <div id="Cypher" class="Cypher" onclick="chooseCypher()" style="padding: 10px;">
+                    <p>Cypher</p>
+                </div>
+                <div id="Reyna" class="Reyna" onclick="chooseReyna()" style="padding: 10px;">
+                    <p>Reyna</p>
+                </div>
+                <div id="Killjoy" class="Killjoy" onclick="chooseKilljoy()" style="padding: 10px;">
+                    <p>Killjoy</p>
+                </div>
+                <div id="Skye" class="Skye" onclick="chooseSkye()" style="padding: 10px;">
+                    <p>Skye</p>
+                </div>
+                <div id="Yoru" class="Yoru" onclick="chooseYoru()" style="padding: 10px;">
+                    <p>Yoru</p>
+                </div>
+                <div id="Astra" class="Astra" onclick="chooseAstra()" style="padding: 10px;">
+                    <p>Astra</p>
+                </div>
+                <div id="KayO" class="KayO" onclick="chooseKayO()" style="padding: 10px;">
+                    <p>Kay/o</p>
+                </div>
+                <div id="Chamber" class="Chamber" onclick="chooseChamber()" style="padding: 10px;">
+                    <p>Chamber</p>
+                </div>
+                <div id="Neon" class="Neon" onclick="chooseNeon()" style="padding: 10px;">
+                    <p>Neon</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End header -->
+
+    <div class="content">
+
+        <div id="img-A"class="img-Agent">
+            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6f1392b30784e029/618d9da0d380f814d61f001c/WebUpdate_Chamber_KeyArt.png" alt="">
+        </div>
+        <!-- <div class="img-background">
+            <img src="/img/sec.png" style="background-color: #ECE8E1;">
+        </div> -->
+        <div id="DA-A" class="descipt-Agent">
+            // หน้าที่SENTINEL<br><br>// ชีวประวัติ<br><br>
+            แต่งกายครบชุด อาวุธจัดเต็ม Chamber นักออกแบบอาวุธชาวฝรั่งเศสจะยับยั้งผู้บุกรุกด้วยความแม่นยำอย่างร้ายกาจ เขาใช้คลังแสงสั่งทำพิเศษของเขาเพื่ิอป้องกันพื้นที่ และเด็ดหัวศัตรูจากระยะไกล และมีแผนสำรองที่เหมาะสมสำหรับทุกแผนการ
+        </div>
+
+        <div class="grid">
+            <div id="video-A" class="grid-collum">
+                <video autoplay mute loop src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc97eeaeb138d2155/618d9fb7867d1817d95f3b2b/VAL_broll_EP03-3_Chamber_Q.mp4"></video>
+            </div>
+
+            <div class="grid-collum1">
+
+                <div class="first">
+                    <h1>ทักษะพิเศษ</h1>
+                </div>
+
+                <div class="second">
+                    <div class="skill">
+                        <ul id="Q" class="skill1" onclick="skillQ()">
+                            <li><img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt734ce749d24f1b4f/618d9ebad380f814d61f0020/Chamber_ability_Q.png" alt=""></li>
+                        </ul>
+                        <ul id="E" class="skill2" onclick="skillE()">
+                            <li><img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt273c7e9db39da271/618d9ec29dccbf6fa4178520/Chamber_ability_E.png" alt=""></li>
+                        </ul>
+                        <ul id="C" class="skill3" onclick="skillC()">
+                            <li><img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt4c14aadba51a0037/618d9ed03b08dd14d79a8087/Chamber_ability_C.png" alt=""></li>
+                        </ul>
+                        <ul id="X" class="skill4" onclick="skillX()">
+                            <li><img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6856745815feee67/618d9eda3b08dd14d79a808b/Chamber_ability_X.png" alt=""></li>
+                            
+                        </ul>
+
+                    </div>
+
+                </div>
+                <!-- End sccond -->
+                                
+                <div id="DA-S" class="third" >
+                    <p>Q - HEADHUNTER<br><br>
+                        ใช้งานเพื่อติดตั้งปืนพกหนัก ใช้ปุ่มยิงเสริมเมื่อติดตั้งปืนพกเพื่อเล็งผ่านลำกล้อง
+                    </p>
+                </div>
+
+            </div>
+            <!-- End grid-collum1 -->
+        </div>
+        <!-- End grid -->
+    </div>
+    <!-- End content -->
+
+    <footer>
+        <a href="https://playvalorant.com/th-th/download/">
+        <div class="download">
+            <h4>ดาวโหลด</h4>
+        </div></a>
+        <div class="contact">
+            
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+    
+    <script src="Agents.js"></script>
+
+
+
+
+</body>
+</html>
